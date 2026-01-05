@@ -5,7 +5,7 @@ import sys
 from logging.config import fileConfig
 from pathlib import Path
 
-# Add the project root directory to the Python path
+
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from sqlalchemy import pool
@@ -16,7 +16,7 @@ from alembic import context
 from api.core.config import settings
 from api.core.database import Base
 
-# Automatically import all models
+
 src_path = Path(__file__).parent.parent / "api" / "src"
 for path in src_path.rglob("*.py"):
     if path.name != "__init__.py":
@@ -28,17 +28,17 @@ for path in src_path.rglob("*.py"):
         except Exception as e:
             print(f"Failed to import {module_path}: {e}")
 
-# this is the Alembic Config object
+
 config = context.config
 
-# Interpret the config file for Python logging
+
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
-# Set sqlalchemy.url
+
 config.set_main_option("sqlalchemy.url", settings.DATABASE_URL)
 
-# Add your model's MetaData object here for 'autogenerate' support
+
 target_metadata = Base.metadata
 
 

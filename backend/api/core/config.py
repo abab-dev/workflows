@@ -9,10 +9,9 @@ class Settings(BaseSettings):
     DEBUG: bool = False
     ENCRYPTION_KEY: str
 
-    # JWT Settings
-    JWT_SECRET: str  # Change in production
+    JWT_SECRET: str
     JWT_ALGORITHM: str = "HS256"
-    JWT_EXPIRATION: int = 30  # minutes
+    JWT_EXPIRATION: int = 30
     GOOGLE_API_KEY: str
 
     model_config = SettingsConfigDict(

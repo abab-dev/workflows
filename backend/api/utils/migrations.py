@@ -11,11 +11,9 @@ def run_migrations():
     command execution might be restricted.
     """
     try:
-        # Ensure the current directory is in the Python path
         current_dir = os.path.dirname(os.path.abspath(__file__))
         sys.path.insert(0, current_dir)
 
-        # Use sys.executable to run the Alembic module
         result = subprocess.run(
             [sys.executable, "-m", "alembic", "upgrade", "head"],
             capture_output=True,
@@ -23,7 +21,6 @@ def run_migrations():
             check=True,
         )
 
-        # Print the output if there's any
         if result.stdout:
             print("Migration output:", result.stdout)
 

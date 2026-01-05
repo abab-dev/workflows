@@ -19,7 +19,6 @@ load_dotenv()
 
 @tool
 def get_current_date(just_the_year: bool = False) -> str:
-    """Returns the current date. If just_the_year is true, returns only the year."""
     today = date.today()
     if just_the_year:
         return str(today.year)
