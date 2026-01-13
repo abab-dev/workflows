@@ -65,4 +65,4 @@ async def health_check():
 @app.get("/")
 async def root():
     logger.debug("Root endpoint called")
-    return {"message": "Welcome to Hero API!"}
+    return {"message": "Welcome to AutomateHQ!"}

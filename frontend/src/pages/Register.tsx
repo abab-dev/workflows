@@ -62,7 +62,7 @@ export default function Register() {
             <Workflow className="h-12 w-12 text-primary-foreground" />
           </div>
           <div className="text-center">
-            <h1 className="text-3xl font-bold tracking-tight">Hero API</h1>
+            <h1 className="text-3xl font-bold tracking-tight">AutomateHQ</h1>
             <p className="text-muted-foreground">Workflow automation platform</p>
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function Register() {
           <CardHeader className="space-y-1">
             <CardTitle className="text-2xl text-center">Create account</CardTitle>
             <CardDescription className="text-center">
-              Enter your details to create your Hero API account
+              Enter your details to create your AutomateHQ account
             </CardDescription>
           </CardHeader>
           <CardContent>

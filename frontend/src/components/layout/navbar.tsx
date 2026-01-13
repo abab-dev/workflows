@@ -24,7 +24,7 @@ export function Navbar() {
               <div className="gradient-primary rounded-lg p-2">
                 <Workflow className="h-6 w-6 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold">Hero API</span>
+              <span className="text-xl font-bold">AutomateHQ</span>
             </Link>
             
             <div className="flex space-x-1">

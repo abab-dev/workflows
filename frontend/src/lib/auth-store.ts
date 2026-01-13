@@ -34,7 +34,7 @@ export const useAuthStore = create<AuthState>()(
         }),
     }),
     {
-      name: 'hero-api-auth',
+      name: 'automatehq-auth',
       storage: createJSONStorage(() => localStorage),
     }
   )

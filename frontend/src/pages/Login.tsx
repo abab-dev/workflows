@@ -60,7 +60,7 @@ export default function Login() {
             <Workflow className="h-12 w-12 text-primary-foreground" />
           </div>
           <div className="text-center">
-            <h1 className="text-3xl font-bold tracking-tight">Hero API</h1>
+            <h1 className="text-3xl font-bold tracking-tight">AutomateHQ</h1>
             <p className="text-muted-foreground">Workflow automation platform</p>
           </div>
         </div>
